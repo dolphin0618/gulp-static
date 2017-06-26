@@ -28,7 +28,12 @@ gulp.task('script', function(){
     .pipe(rev.manifest({path:'js.json', merge: true}))
     .pipe(gulp.dest('./test/dist/rev'));
 });
-
+// 图片处理
+//gulp.task('images', function(){
+//    gulp.src('./src/images/*')
+//   .pipe(imagemin())
+//    .pipe(gulp.dest('./dist/static/images'));
+//})
 
 // 处理html
 gulp.task('htmlmin', function () {
